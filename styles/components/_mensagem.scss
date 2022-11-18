@@ -1,0 +1,39 @@
+@import '../abstract/variables';
+
+#mensagem {
+   margin: 1rem 0;
+   padding: 4rem 1rem 2rem 1rem;
+   text-align: center;
+
+   img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+
+      @media screen and (min-width: 48rem) {
+         width: 25rem;
+      }
+   }  
+
+   .texto {
+
+      h3 {
+         color: $color-primary;
+         font-family: $font-heading;
+         font-size: $heading-font-size;
+         font-weight: 700;
+         margin: 1rem 0;
+      }
+   
+      h4 {
+         color: $color-secondary;
+         font-size: $sub-heading-font-size;
+         line-height: 2rem;
+         margin: 1rem 0;
+      }
+
+      p {
+         line-height: 1.5rem;
+      }
+   }
+}

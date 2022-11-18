@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+html, body {
+  box-sizing: border-box;
+  color: #555555;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  margin: 1rem 0 0.5rem 0;
+  width: 45px;
+}
+header nav {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  header nav ul li {
+    margin: 0 1.5rem;
+  }
+}
+header nav ul li a {
+  border-bottom: 1px dotted #e27866;
+  color: #15133c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.25rem 0.25rem 0.1rem 0.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  header nav ul li a:hover {
+    border-bottom: none;
+  }
+}
+
+.banner {
+  align-items: center;
+  background: url("../imagens/banner.jpeg") left center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    min-height: 350px;
+  }
+}
+.banner .inner-banner {
+  text-align: center;
+}
+.banner .inner-banner h1 {
+  color: #f5f5f5;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
+}
+
+#servicos {
+  margin: 60px 0 20px 0;
+}
+@media screen and (min-width: 768px) {
+  #servicos {
+    margin: 60px 16px 20px;
+  }
+}
+#servicos h3 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+#servicos h4 {
+  color: #73777b;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0.5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+#servicos .cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #servicos .cards {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}
+#servicos .cards .card {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #servicos .cards .card {
+    flex-basis: 33%;
+  }
+}
+#servicos .cards .card .img-container {
+  padding-bottom: 2px;
+}
+#servicos .cards .card .img-container img {
+  width: 100%;
+}
+#servicos .cards .card h5 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+#servicos .cards .card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#cupom {
+  background-color: #f5f5f5;
+  padding: 2.5rem;
+  text-align: center;
+}
+#cupom .texto h2 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+#cupom .texto h2 i {
+  color: #e27866;
+  display: block;
+  margin: 1rem 0;
+}
+#cupom .texto h3 {
+  color: #73777b;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+#cupom .inscricao {
+  margin: 2rem 0 0.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  #cupom .inscricao {
+    margin: 2rem auto 0.5rem auto;
+    width: 50%;
+  }
+}
+#cupom .inscricao form {
+  display: flex;
+  justify-content: center;
+}
+#cupom .inscricao form .input input {
+  border: 1px solid #e27866;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  #cupom .inscricao form .input input {
+    width: 350px;
+  }
+}
+#cupom .inscricao form button {
+  background-color: #e27866;
+  border: 1px solid #e27866;
+  color: #f5f5f5;
+  font-weight: bold;
+  transition: ease-in-out 1s;
+}
+@media screen and (min-width: 768px) {
+  #cupom .inscricao form button:hover {
+    background-color: #15133c;
+    border: 1px solid #15133c;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+  }
+}
+
+footer {
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+footer i {
+  color: #e27866;
+}
+
+#mensagem {
+  margin: 1rem 0;
+  padding: 4rem 1rem 2rem 1rem;
+  text-align: center;
+}
+#mensagem img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #mensagem img {
+    width: 400px;
+  }
+}
+#mensagem .texto h3 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+#mensagem .texto h4 {
+  color: #73777b;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+#mensagem .texto p {
+  line-height: 1.5rem;
+}
+
+#espaco {
+  border-bottom: 1px solid #f5f5f5;
+  margin: 40px 0 20px 0;
+}
+@media screen and (min-width: 768px) {
+  #espaco {
+    margin: 60px 16px 20px;
+  }
+}
+#espaco h3 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+#espaco h4 {
+  color: #73777b;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0.5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+#espaco .cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #espaco .cards {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}
+#espaco .cards .card {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #espaco .cards .card {
+    flex-basis: 33%;
+  }
+}
+#espaco .cards .card .img-container {
+  padding-bottom: 2px;
+}
+#espaco .cards .card .img-container img {
+  width: 100%;
+}
+#espaco .cards .card h5 {
+  color: #15133c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+#espaco .cards .card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#botao {
+  background-color: #e27866;
+  border-radius: 50%;
+  bottom: 8px;
+  left: 85%;
+  padding: 14px 8px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+#botao a {
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  #botao {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

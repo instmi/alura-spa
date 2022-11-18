@@ -1,0 +1,24 @@
+@import '../abstract/variables';
+
+.banner {
+   align-items: center;
+   background: url('../imagens/banner.jpeg') left center no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   min-height: 15.625rem;
+
+   @media screen and (min-width: 48rem) {
+      min-height: 21.875rem;
+   }
+   .inner-banner {
+      text-align: center;
+
+      h1 {
+         color: $color-tertiary;
+         font-family: $font-heading;
+         font-size: $banner-font-size;
+         margin: 0.5rem 0;
+      }
+   }
+}

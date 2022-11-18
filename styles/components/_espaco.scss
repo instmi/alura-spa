@@ -1,0 +1,15 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+#espaco {
+   border-bottom: 0.0625rem solid $color-tertiary;
+   margin: 2.5rem 0 1.25rem 0;
+
+   @media screen and (min-width: 48rem) {
+      margin: 3.75rem 1rem 1.25rem;
+   }
+
+   @include title-and-subtitle;
+
+   @include card-section-and-cards;
+}

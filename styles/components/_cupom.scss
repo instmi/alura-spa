@@ -1,0 +1,73 @@
+@import '../abstract/variables';
+
+#cupom {
+   background-color: $color-tertiary;
+   padding: 2.5rem;
+   text-align: center;
+
+   .texto {
+      h2 {
+         color: $color-primary;
+         font-family: $font-heading;
+         font-size: $heading-font-size;
+         font-weight: 700;
+         line-height: 2rem;
+         margin-bottom: 1rem;
+
+         i {
+            color: $color-accent;
+            display: block;
+            margin: 1rem 0;
+         }
+      }
+
+      h3 {
+         color: $color-secondary;
+         font-size: $sub-heading-font-size;
+         line-height: 2rem;
+      }
+   }
+
+   .inscricao {
+      margin: 2rem 0 0.5rem 0;
+
+      @media screen and (min-width: 48rem) {
+         margin: 2rem auto 0.5rem auto;
+         width: 50%;
+      }
+
+      form {
+         display: flex;
+         justify-content: center;
+
+         .input {
+
+            input {
+               border: 0.0625rem solid $color-accent;
+               padding: 0.5rem;
+
+               @media screen and (min-width: 48rem) {
+                  width: 21.875rem;
+               }
+            }
+         }
+
+         button {
+            background-color: $color-accent;
+            border: 0.0625rem solid $color-accent;
+            color: $color-tertiary;
+            font-weight: bold;
+            transition: ease-in-out 1s;
+
+            @media screen and (min-width: 48rem) {
+               &:hover {
+                  background-color: $color-primary;
+                  border: 0.0625rem solid $color-primary;
+                  cursor: pointer;
+                  transition: ease-in-out 1s;
+               }
+            }
+         }
+      }
+   }
+}

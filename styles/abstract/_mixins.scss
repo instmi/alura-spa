@@ -1,0 +1,66 @@
+@mixin title-and-subtitle {
+   h3 {
+      color: $color-primary;
+      font-family: $font-heading;
+      font-size: $heading-font-size;
+      font-weight: 700;
+      margin: 1rem 0 0.5rem 0;
+      text-align: center;
+   }
+
+   h4 {
+      color: $color-secondary;
+      font-size: $sub-heading-font-size;
+      line-height: 2rem;
+      margin: 0.5rem 1rem 2rem 1rem;
+      text-align: center;
+   }
+}
+
+@mixin card-section-and-cards {
+   .cards {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+         flex-direction: row;
+         gap: 1rem;
+         justify-content: space-between;
+      }
+
+      .card {
+         border-radius: 0.5rem;
+         margin-bottom: 1rem;
+         padding-bottom: 0.5rem;
+         text-align: center;
+         max-width: 100%;
+
+         @media screen and (min-width: 768px) {
+            flex-basis: 33%;
+         }
+
+         .img-container {
+            padding-bottom: 2px;
+
+            img {
+               width: 100%;
+            }
+         }
+
+         h5 {
+            color: $color-primary;
+            font-family: $font-heading;
+            font-size: $sub-heading-font-size;
+            font-weight: 700;
+            margin-top: 0.5rem;
+         }
+
+         p {
+            font-size: $text-font-size;
+            line-height: 1.5rem;
+            padding: 0.5rem 1rem;
+         }
+      }
+   }
+}
